@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
+    <!-- favicon  -->
     <link
       rel="icon"
       type="image/png"
-      href="assets/favicon/favicon-96x96.png"
+      href="assets/favicon (1)/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/favicon (1)/favicon.svg"
+    />
+    <link rel="shortcut icon" href="assets/favicon (1)/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
+      href="assets/favicon (1)/apple-touch-icon.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="assets/favicon (1)/site.webmanifest" />
+    <!-- seo엔진 최적화 -->
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
     <meta name="description" content="STX건설 웹사이트입니다." />
@@ -41,13 +46,32 @@
     <meta property="og:description" content="STX건설 웹사이트입니다." />
     <!-- css연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     <title>남선알미늄 건설사업부문</title>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
-      <!--상단  -->
+      <!-- quick -->
+      <div class="quick">
+        <!-- help -->
+        <div class="help">
+          <a href="#" id="chat">
+            <img src="images/chat-btn.png" alt="chat" />
+            <span>무엇을 도와드릴까요?</span>
+          </a>
+        </div>
+        <!-- shop -->
+        <a href="#" id="shop">STX</a>
+        <!-- gotop -->
+        <a href="#" id="gotop">↑</a>
+      </div>
+      <!-- 상단 -->
       <header class="header">
+        <!-- header-bg -->
+        <div class="header-bg"></div>
         <div class="header-inner">
           <!-- 로고 -->
           <a href="#" class="logo">
@@ -57,7 +81,7 @@
           <nav class="nav">
             <ul class="gnb">
               <li>
-                <a href="#">회사소개</a>
+                <a href="#" class="aboutMenu">회사소개</a>
                 <ul class="depth2">
                   <li><a href="#">인사말</a></li>
                   <li><a href="#">STX건설</a></li>
@@ -132,22 +156,258 @@
             BEST OF THE WORLD <br />
             STX Engineering & Construction
           </h1>
-          <span class="visual-txt"
-            >세계최고를 향해 STX건설이 힘차게 질주합니다!</span
-          >
-          <a href="#"><button class="visual-btn"></button>버튼</a>
+          <p class="visual-txt">세계최고를 향해 STX건설이 힘차게 질주합니다!</p>
+          <a href="#news"><button class="visual-btn"></button></a>
         </div>
       </section>
-      <!-- 비지니스 -->
-      <section class="business"></section>
+      <!-- 비즈니스 -->
+      <section class="business">
+        <div class="business-inner inner">
+          <!-- 비즈니스 상단 -->
+          <div class="business-top">
+            <h2 class="business-title">
+              NS Engineering & Construction Business
+            </h2>
+            <p class="business-desc">
+              남선알미늄 건설사업부문은 건문 역량 강화를 통해 건축, 주택, 토목,
+              플랜트 사업 영역에서
+              <br />
+              탁월한 성과를 인정받은 기업으로 자연과 기술의 공간에 인류의 가치를
+              추구합니다.
+            </p>
+          </div>
+          <!-- 비즈니스 하단 -->
+          <div class="business-bottom">
+            <ul class="business-list">
+              <li>
+                <a href="#">
+                  <div class="img-area">
+                    <div class="txt">건축사업</div>
+                    <div class="hover-area">
+                      <div class="txt">건축사업</div>
+                      <div class="icon"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-area">
+                    <div class="txt">주택사업</div>
+                    <div class="hover-area">
+                      <div class="txt">주택사업</div>
+                      <div class="icon"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-area">
+                    <div class="txt">토목사업</div>
+                    <div class="hover-area">
+                      <div class="txt">토목사업</div>
+                      <div class="icon"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-area">
+                    <div class="txt">플랜트/공작기계사업</div>
+                    <div class="hover-area">
+                      <div class="txt">플랜트/공작기계사업</div>
+                      <div class="icon"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-area">
+                    <div class="txt">해외사업</div>
+                    <div class="hover-area">
+                      <div class="txt">해외사업</div>
+                      <div class="icon"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 뉴스 -->
-      <section class="news"></section>
+      <section class="news" id="news">
+        <!-- 배경색 넣기 -->
+        <div class="news-bg"></div>
+        <div class="news-inner inner">
+          <!-- 공지사항 -->
+          <div class="news-wrap">
+            <h3>공지사항</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#"
+                    ><span class="news-txt"
+                      >회사분할에 따른 주권제출 및 채권자 이의제출공고</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="news-txt"
+                      >에스티엑스건설자산관리 주식회사 해산결의에 따른
+                      채권신고</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="news-txt"
+                      >제20기 정기주주총회 개최의 건</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="news-txt">분할계획서 변경공고</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 보도자료 -->
+          <div class="news-wrap">
+            <h3>보도자료</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 회생절차 종료 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 2018년 성장 '청신호'
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 고객센터 -->
-      <section class="cs"></section>
+      <section class="cs">
+        <div class="cs-inner inner">
+          <ul class="cs-list">
+            <li>
+              <div class="faq">
+                <a href="#">
+                  <h3>FAQ</h3>
+                  <p>
+                    STX건설 고객님들을 위해 <br />
+                    자주하시는 질문과 답변을 정리하였습니다.
+                  </p>
+                </a>
+                <div class="cs-img gaq-img">
+                  <img src="images/bg_faq.png" alt="faq" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="faq">
+                <a href="#">
+                  <h3>고객문의</h3>
+                  <p>
+                    STX건설 고객상담은 고객만족 <br />
+                    서비스를 위하여 최선을 다하고 있습니다.
+                  </p>
+                </a>
+                <div class="cs-img custom-img">
+                  <img src="images/bg_custom.png" alt="custom" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- 회사소개 -->
-      <section class="about"></section>
+      <section class="about">
+        <div class="about-inner inner">
+          <!-- 회사소개 상단 -->
+          <div class="about-top">
+            <!-- 왼쪽 -->
+            <div class="about-txt">
+              <h3>ABOUT US</h3>
+              <div class="text_sub_box">
+                <p class="title">
+                  고객의 믿음과 신뢰로 성장하는
+                  <br />
+                  남선알미늄 건설사업부문이 되겠습니다.
+                </p>
+                <p class="text_sub">
+                  STX건설 이름으로 세계 어디에서, 세계 누구와 겨뤄도 <br />
+                  자신 있는 세계 최고를 향해 웅비합니다. STX건설이라는 날개를
+                  <br />
+                  하나 더 피고 세계로, 미래로 나아가는 STX건설의 힘찬 비상을
+                  주목해 <br />
+                  주십시오.
+                </p>
+              </div>
+            </div>
+
+            <!-- 오른쪽 -->
+            <div class="about-img">
+              <img src="images/img_about.png" alt="about" />
+            </div>
+          </div>
+
+          <!-- 회사소개 하단 -->
+          <div class="about-bottom">
+            <ul class="about-icon">
+              <li>
+                <a href="#"><span>경영이념</span></a>
+              </li>
+              <li>
+                <a href="#"><span>공유가치</span></a>
+              </li>
+              <li>
+                <a href="#"><span>중장기전략</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 하단 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer-inner inner">
+          <div class="footer-wrap">
+            <div class="footer-logo">
+              <img src="images/logo_footer.png" alt="footer-logo" />
+            </div>
+            <div class="footer-txt">
+              <address>
+                대구사무소 : (41590) 대구광역시 북구 원대로 128, 연우빌딩 7층
+                TEL : 053-712-3100 · FAX : 053-712-3199
+              </address>
+              <p class="copy">
+                Copyright ⓒ NS CONSTRUCTION. LTD. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
